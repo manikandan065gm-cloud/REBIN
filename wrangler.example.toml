@@ -1,0 +1,23 @@
+# Example Wrangler configuration for local development
+# Copy this to wrangler.toml and fill in your values
+
+name = "rebin-local"
+main = "src/worker/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[assets]
+directory = "dist"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "rebin-local-db"
+database_id = "YOUR_DATABASE_ID_HERE"  # Get this from: wrangler d1 create rebin-local-db
+
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "rebin-local-bucket"  # Create with: wrangler r2 bucket create rebin-local-bucket
