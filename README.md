@@ -115,12 +115,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- Built with [Mocha](https://getmocha.com)
-- UI components from [shadcn/ui](https://ui.shadcn.com)
-- Icons from [Lucide](https://lucide.dev)
-- Maps powered by [Leaflet](https://leafletjs.com)
 
 ## 📧 Contact
 
